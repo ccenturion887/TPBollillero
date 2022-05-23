@@ -5,11 +5,21 @@ public class Bolillero
 {
     public List<byte> Adentro {get ; set ;}
     public List<byte> Afuera {get ; set; }
+    public Bolilla int {get ; set;}
     private IAzar azar;
     public Bolillero()
     {
-        Adentro = new List<byte>();
-        Afuera = new List<byte>();
+        Adentro = new ();
+        Afuera = new ();
     }
-    private void crearBolilla()
+    private void crearBolilla (Adentro adentro)
+    {
+        if(value>=9)
+        {    
+            trhow new ArgumentException("Cantidad maxima de bolillas")
+        }
+        Bolilla = value;
+        Bolilla.Add.(Bolilla);
+    }
+    
 }
