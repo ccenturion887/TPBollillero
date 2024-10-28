@@ -1,6 +1,6 @@
 using System;
 namespace TPBollilero.Core;
-public class Aleatorio:IAzar
+public class Aleatorio : IAzar
 {
   private List<int> bolillas;
   private Random random;
