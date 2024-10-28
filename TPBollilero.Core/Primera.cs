@@ -11,7 +11,7 @@ public class Primera
     }
 
     [Fact]
-    public void SacarBolilla_DeberiaDevolverBolillaCero()
+    public void SacarBolilla()
     {
         // Simulamos que la primera bolilla a sacar es siempre la 0
         int bolilla = bolillero.SacarBolilla();
@@ -21,7 +21,7 @@ public class Primera
     }
 
     [Fact]
-    public void ReIngresar_DeberiaRegresarBolillaAlBolillero()
+    public void ReIngresarBolilla()
     {
         int bolilla = bolillero.SacarBolilla();
         bolillero.ReIngresarBolilla(bolilla);
@@ -31,7 +31,7 @@ public class Primera
     }
 
     [Fact]
-    public void JugarGana_DeberiaGanarConBolillasAcertadas()
+    public void JugarGana()
     {
         List<int> jugadaGanadora = new List<int> { 0, 1, 2, 3 };
         
@@ -40,14 +40,14 @@ public class Primera
     }
 
     [Fact]
-    public void JugarPierde_DeberiaPerderConBolillasIncorrectas()
+    public void JugarPierde()
     {
         List<int> jugadaPerdedora = new List<int> { 4, 2, 1 };
         Assert.False(bolillero.Jugar(jugadaPerdedora));
     }
 
     [Fact]
-    public void GanarNVeces_DeberiaGanarUnaVez()
+    public void GanarNumeroVeces()
     {
         List<int> jugada = new List<int> { 0, 1 };
         int resultado = bolillero.JugarNVeces(jugada, 1);
