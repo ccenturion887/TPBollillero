@@ -7,7 +7,7 @@ public class Aleatorio
 
   public Bolillero()
     {
-        CrearBolilla = Enumerable.Range(0, 10).ToList();
+        crearBolilla = Enumerable.Range(0, 10).ToList();
         random = new Random();
     }
 }
