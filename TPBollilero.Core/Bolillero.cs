@@ -3,6 +3,7 @@ using System.Collections.Generic;
 namespace TPBollilero.Core;
 public class Bolillero
 {
+    private List<int> bolillas;
     public List<byte> Adentro {get ; set ;}
     public List<byte> Afuera {get ; set; }
     public Bolilla int {get ; set;}
